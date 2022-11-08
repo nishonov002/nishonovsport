@@ -1,0 +1,113 @@
+footer {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 80px 125px;
+    background-color: rgb(241, 241, 241);
+    .box-1 {
+      width: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      h2 {
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.165em;
+        text-transform: uppercase;
+
+        /* AF/Black */
+
+        color: #000000;
+      }
+      input {
+        background-color: rgb(241, 241, 241);
+        width: 420px;
+        border: none;
+        outline: none;
+        padding: 16px 0;
+        border-bottom: 1px solid #c4c4c4;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        a {
+        }
+      }
+    }
+    .box {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      h2 {
+        margin-bottom: 32px;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.165em;
+        text-transform: uppercase;
+
+        /* AF/Dark grey */
+
+        color: #353535;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        a {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 167.5%;
+          /* or 23px */
+
+          color: #7e7e7e;
+        }
+      }
+    }
+  }
+}
+@media (max-width:375px) {
+  footer {
+    .container {
+      width: 375px;
+      flex-direction: column;
+      padding: 40px 16px;
+      gap:25px;
+      h2{
+        margin-bottom: 16px;
+      }
+      .box-1{
+         gap:20px;
+        h2{
+          margin-bottom: 0;
+        }
+       
+        input{
+          width: 343px;
+        }
+      }
+      .box{
+        width: 343px;
+         gap:0px;
+      }
+    }
+  }
+}
